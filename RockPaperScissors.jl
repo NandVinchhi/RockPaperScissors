@@ -9,12 +9,12 @@ while true
     player_score = 0
     i = 0
     while i < 3
-    println("")
-    println("Enter 'rock', 'paper' or 'scissors' to commence. Choose wisely! :")
+        println("")
+        println("Enter 'rock', 'paper' or 'scissors' to commence. Choose wisely! :")
     
-    x = lowercase(readline())
+        x = lowercase(readline())
     
-    x == "rock" || x == "scissors" || x == "paper" ? (
+        x == "rock" || x == "scissors" || x == "paper" ? (
     	println("");
     	println("computer is processing... "); 
     	println(""); 
@@ -41,7 +41,7 @@ while true
     	println("____________________________________________________________________________"); 
     	println("") )) : println("Please enter a valid choice.")
     
-    player_score == 2 || computer_score == 2 ? break : println("")
+        player_score == 2 || computer_score == 2 ? break : println("")
     end
     player_score > computer_score ? println("Congratulations, You win this match!") : println("Game Over. The Computer Won. Better luck next time!")
     println("")
